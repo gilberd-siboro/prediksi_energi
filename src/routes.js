@@ -3,49 +3,85 @@ import React from 'react'
 const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'))
 
 // OPMC
-const OpmcL1 = React.lazy(() => import('./views/opmc/lantai1/Lantai1'))
-const OpmcL2 = React.lazy(() => import('./views/opmc/lantai2/Lantai2'))
-const OpmcL3 = React.lazy(() => import('./views/opmc/lantai3/Lantai3'))
-const OpmcL4 = React.lazy(() => import('./views/opmc/lantai4/Lantai4'))
-const OpmcL5 = React.lazy(() => import('./views/opmc/lantai5/Lantai5'))
-const OpmcL6 = React.lazy(() => import('./views/opmc/lantai6/Lantai6'))
+
+// Opmc AHU
+const OpmcAhuL2 = React.lazy(() => import('./views/opmc/ahu/lantai2/Lantai2'))
+const OpmcAhuL3 = React.lazy(() => import('./views/opmc/ahu/lantai3/Lantai3'))
+const OpmcAhuL4 = React.lazy(() => import('./views/opmc/ahu/lantai4/Lantai4'))
+const OpmcAhuL5 = React.lazy(() => import('./views/opmc/ahu/lantai5/Lantai5'))
+const OpmcAhuL6 = React.lazy(() => import('./views/opmc/ahu/lantai6/Lantai6'))
+
+// Opmc SDP
+const OpmcSdpL1 = React.lazy(() => import('./views/opmc/sdp/lantai1/Lantai1'))
+const OpmcSdpL2 = React.lazy(() => import('./views/opmc/sdp/lantai2/Lantai2'))
+const OpmcSdpL3 = React.lazy(() => import('./views/opmc/sdp/lantai3/Lantai3'))
+const OpmcSdpL4 = React.lazy(() => import('./views/opmc/sdp/lantai4/Lantai4'))
+const OpmcSdpL5 = React.lazy(() => import('./views/opmc/sdp/lantai5/Lantai5'))
+const OpmcSdpL6 = React.lazy(() => import('./views/opmc/sdp/lantai6/Lantai6'))
 const OpmcLift = React.lazy(() => import('./views/opmc/lift/Lift'))
 
 // WITEL
 
 const Chiller = React.lazy(() => import('./views/witel/chiller/Chiller'))
-const WitelL1 = React.lazy(() => import('./views/witel/lantai1/Lantai1'))
-const WitelL2 = React.lazy(() => import('./views/witel/lantai2/Lantai2'))
-const WitelL3 = React.lazy(() => import('./views/witel/lantai3/Lantai3'))
-const WitelL4 = React.lazy(() => import('./views/witel/lantai4/Lantai4'))
-const WitelL5 = React.lazy(() => import('./views/witel/lantai5/Lantai5'))
-const WitelL6 = React.lazy(() => import('./views/witel/lantai6/Lantai6'))
-const WitelL7 = React.lazy(() => import('./views/witel/lantai7/Lantai7'))
-const WitelL8 = React.lazy(() => import('./views/witel/lantai8/Lantai8'))
 const WitelLift = React.lazy(() => import('./views/witel/lift/Lift'))
+
+// Witel AHU
+
+const WitelAhuL1 = React.lazy(() => import('./views/witel/ahu/lantai1/Lantai1'))
+const WitelAhuL2 = React.lazy(() => import('./views/witel/ahu/lantai2/Lantai2'))
+const WitelAhuL3 = React.lazy(() => import('./views/witel/ahu/lantai3/Lantai3'))
+const WitelAhuL4 = React.lazy(() => import('./views/witel/ahu/lantai4/Lantai4'))
+const WitelAhuL5 = React.lazy(() => import('./views/witel/ahu/lantai5/Lantai5'))
+const WitelAhuL6 = React.lazy(() => import('./views/witel/ahu/lantai6/Lantai6'))
+const WitelAhuL7 = React.lazy(() => import('./views/witel/ahu/lantai7/Lantai7'))
+const WitelAhuL8 = React.lazy(() => import('./views/witel/ahu/lantai8/Lantai8'))
+
+// Witel SDP
+
+const WitelSdpL1 = React.lazy(() => import('./views/witel/sdp/lantai1/Lantai1'))
+const WitelSdpL2 = React.lazy(() => import('./views/witel/sdp/lantai2/Lantai2'))
+const WitelSdpL3 = React.lazy(() => import('./views/witel/sdp/lantai3/Lantai3'))
+const WitelSdpL4 = React.lazy(() => import('./views/witel/sdp/lantai4/Lantai4'))
+const WitelSdpL5 = React.lazy(() => import('./views/witel/sdp/lantai5/Lantai5'))
+const WitelSdpL6 = React.lazy(() => import('./views/witel/sdp/lantai6/Lantai6'))
+const WitelSdpL7 = React.lazy(() => import('./views/witel/sdp/lantai7/Lantai7'))
+const WitelSdpL8 = React.lazy(() => import('./views/witel/sdp/lantai8/Lantai8'))
 
 
 const routes = [
   { path: '/', exact: true, name: 'Home' },
   { path: '/dashboard', name: 'Dashboard', element: Dashboard },
   { path: '/opmc', name: 'Opmc', exact: true },
-  { path: '/opmc/lantai1', name: 'Lantai 1', element: OpmcL1 },
-  { path: '/opmc/lantai2', name: 'Lantai 2', element: OpmcL2 },
-  { path: '/opmc/lantai3', name: 'Lantai 3', element: OpmcL3 },
-  { path: '/opmc/lantai4', name: 'Lantai 4', element: OpmcL4 },
-  { path: '/opmc/lantai5', name: 'Lantai 5', element: OpmcL5 },
-  { path: '/opmc/lantai6', name: 'Lantai 6', element: OpmcL6 },
+  { path: '/opmc/ahu/lantai2', name: 'AHU Lantai 2', element: OpmcAhuL2 },
+  { path: '/opmc/ahu/lantai3', name: 'AHU Lantai 3', element: OpmcAhuL3 },
+  { path: '/opmc/ahu/lantai4', name: 'AHU Lantai 4', element: OpmcAhuL4 },
+  { path: '/opmc/ahu/lantai5', name: 'AHU Lantai 5', element: OpmcAhuL5 },
+  { path: '/opmc/ahu/lantai6', name: 'AHU Lantai 6', element: OpmcAhuL6 },
+  { path: '/opmc/sdp/lantai1', name: 'SDP Lantai 1', element: OpmcSdpL1 },
+  { path: '/opmc/sdp/lantai2', name: 'SDP Lantai 2', element: OpmcSdpL2 },
+  { path: '/opmc/sdp/lantai3', name: 'SDP Lantai 3', element: OpmcSdpL3 },
+  { path: '/opmc/sdp/lantai4', name: 'SDP Lantai 4', element: OpmcSdpL4 },
+  { path: '/opmc/sdp/lantai5', name: 'SDP Lantai 5', element: OpmcSdpL5 },
+  { path: '/opmc/sdp/lantai6', name: 'SDP Lantai 6', element: OpmcSdpL6 },
   { path: '/opmc/lift', name: 'Lift', element: OpmcLift,  },
   { path: '/witel', name: 'Witel', exact: true },
   { path: '/witel/chiller', name: 'Chiller', element: Chiller },
-  { path: '/witel/lantai1', name: 'Lantai 1', element: WitelL1 },
-  { path: '/witel/lantai2', name: 'Lantai 2', element: WitelL2 },
-  { path: '/witel/lantai3', name: 'Lantai 3', element: WitelL3 },
-  { path: '/witel/lantai4', name: 'Lantai 4', element: WitelL4 },
-  { path: '/witel/lantai5', name: 'Lantai 5', element: WitelL5 },
-  { path: '/witel/lantai6', name: 'Lantai 6', element: WitelL6 },
-  { path: '/witel/lantai7', name: 'Lantai 7', element: WitelL7 },
-  { path: '/witel/lantai8', name: 'Lantai 8', element: WitelL8 },
+  { path: '/witel/ahu/lantai1', name: 'AHU Lantai 1', element: WitelAhuL1 },
+  { path: '/witel/ahu/lantai2', name: 'AHU Lantai 2', element: WitelAhuL2 },
+  { path: '/witel/ahu/lantai3', name: 'AHU Lantai 3', element: WitelAhuL3 },
+  { path: '/witel/ahu/lantai4', name: 'AHU Lantai 4', element: WitelAhuL4 },
+  { path: '/witel/ahu/lantai5', name: 'AHU Lantai 5', element: WitelAhuL5 },
+  { path: '/witel/ahu/lantai6', name: 'AHU Lantai 6', element: WitelAhuL6 },
+  { path: '/witel/ahu/lantai7', name: 'AHU Lantai 7', element: WitelAhuL7 },
+  { path: '/witel/ahu/lantai8', name: 'AHU Lantai 8', element: WitelAhuL8 },
+  { path: '/witel/sdp/lantai1', name: 'SDP Lantai 1', element: WitelSdpL1 },
+  { path: '/witel/sdp/lantai2', name: 'SDP Lantai 2', element: WitelSdpL2 },
+  { path: '/witel/sdp/lantai3', name: 'SDP Lantai 3', element: WitelSdpL3 },
+  { path: '/witel/sdp/lantai4', name: 'SDP Lantai 4', element: WitelSdpL4 },
+  { path: '/witel/sdp/lantai5', name: 'SDP Lantai 5', element: WitelSdpL5 },
+  { path: '/witel/sdp/lantai6', name: 'SDP Lantai 6', element: WitelSdpL6 },
+  { path: '/witel/sdp/lantai7', name: 'SDP Lantai 7', element: WitelSdpL7 },
+  { path: '/witel/sdp/lantai8', name: 'SDP Lantai 8', element: WitelSdpL8 },
   { path: '/witel/lift', name: 'Lift', element: WitelLift,  },
 
 ]
