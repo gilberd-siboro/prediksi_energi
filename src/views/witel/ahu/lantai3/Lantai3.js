@@ -15,13 +15,13 @@ import {
     CTableDataCell,
     CCard,
     CCardHeader
-  } from '@coreui/react'
+} from '@coreui/react'
 
 const Lantai3 = () => {
     return (
         <CRow>
             <CCol xs={12}>
-            <CDropdown>
+                <CDropdown>
                     <CDropdownToggle color="primary" href="#">Periode Waktu</CDropdownToggle>
                     <CDropdownMenu>
                         <CDropdownItem href="#">24 Jam</CDropdownItem>
@@ -33,110 +33,36 @@ const Lantai3 = () => {
                     <CCol xs={12}>
                         <CCard className="mt-4">
                             <CCardHeader>
-                                <strong>Model ....</strong>
+                                <strong>Hasil Prediksi</strong>
                             </CCardHeader>
                             <CCardBody>
                                 <CTable>
                                     <CTableHead color="light">
                                         <CTableRow>
-                                            <CTableHeaderCell scope="col">#</CTableHeaderCell>
-                                            <CTableHeaderCell scope="col">Class</CTableHeaderCell>
-                                            <CTableHeaderCell scope="col">Heading</CTableHeaderCell>
-                                            <CTableHeaderCell scope="col">Heading</CTableHeaderCell>
+                                            <CTableHeaderCell scope="col">Model</CTableHeaderCell>
+                                            <CTableHeaderCell scope="col">MAE</CTableHeaderCell>
+                                            <CTableHeaderCell scope="col">R2</CTableHeaderCell>
+                                            <CTableHeaderCell scope="col">Total Prediksi kWh</CTableHeaderCell>
                                         </CTableRow>
                                     </CTableHead>
                                     <CTableBody>
                                         <CTableRow>
-                                            <CTableHeaderCell scope="row">1</CTableHeaderCell>
-                                            <CTableDataCell>Mark</CTableDataCell>
-                                            <CTableDataCell>Otto</CTableDataCell>
-                                            <CTableDataCell>@mdo</CTableDataCell>
+                                            <CTableHeaderCell scope="row">Random Forest</CTableHeaderCell>
+                                            <CTableDataCell></CTableDataCell>
+                                            <CTableDataCell></CTableDataCell>
+                                            <CTableDataCell></CTableDataCell>
                                         </CTableRow>
                                         <CTableRow>
-                                            <CTableHeaderCell scope="row">2</CTableHeaderCell>
-                                            <CTableDataCell>Jacob</CTableDataCell>
-                                            <CTableDataCell>Thornton</CTableDataCell>
-                                            <CTableDataCell>@fat</CTableDataCell>
+                                            <CTableHeaderCell scope="row">Linear Regression</CTableHeaderCell>
+                                            <CTableDataCell></CTableDataCell>
+                                            <CTableDataCell></CTableDataCell>
+                                            <CTableDataCell></CTableDataCell>
                                         </CTableRow>
                                         <CTableRow>
-                                            <CTableHeaderCell scope="row">3</CTableHeaderCell>
-                                            <CTableDataCell colSpan={2}>Larry the Bird</CTableDataCell>
-                                            <CTableDataCell>@twitter</CTableDataCell>
-                                        </CTableRow>
-                                    </CTableBody>
-                                </CTable>
-                            </CCardBody>
-                        </CCard>
-                        <CCard className="mt-4">
-                            <CCardHeader>
-                                <strong>Model ....</strong>
-                            </CCardHeader>
-                            <CCardBody>
-
-                                <CTable>
-                                    <CTableHead color="light">
-                                        <CTableRow>
-                                            <CTableHeaderCell scope="col">#</CTableHeaderCell>
-                                            <CTableHeaderCell scope="col">Class</CTableHeaderCell>
-                                            <CTableHeaderCell scope="col">Heading</CTableHeaderCell>
-                                            <CTableHeaderCell scope="col">Heading</CTableHeaderCell>
-                                        </CTableRow>
-                                    </CTableHead>
-                                    <CTableBody>
-                                        <CTableRow>
-                                            <CTableHeaderCell scope="row">1</CTableHeaderCell>
-                                            <CTableDataCell>Mark</CTableDataCell>
-                                            <CTableDataCell>Otto</CTableDataCell>
-                                            <CTableDataCell>@mdo</CTableDataCell>
-                                        </CTableRow>
-                                        <CTableRow>
-                                            <CTableHeaderCell scope="row">2</CTableHeaderCell>
-                                            <CTableDataCell>Jacob</CTableDataCell>
-                                            <CTableDataCell>Thornton</CTableDataCell>
-                                            <CTableDataCell>@fat</CTableDataCell>
-                                        </CTableRow>
-                                        <CTableRow>
-                                            <CTableHeaderCell scope="row">3</CTableHeaderCell>
-                                            <CTableDataCell colSpan={2}>Larry the Bird</CTableDataCell>
-                                            <CTableDataCell>@twitter</CTableDataCell>
-                                        </CTableRow>
-                                    </CTableBody>
-                                </CTable>
-                            </CCardBody>
-                        </CCard>
-
-                        <CCard className="mt-4">
-                            <CCardHeader>
-                                <strong>Model ....</strong>
-                            </CCardHeader>
-                            <CCardBody>
-
-                                <CTable>
-                                    <CTableHead color="light">
-                                        <CTableRow>
-                                            <CTableHeaderCell scope="col">#</CTableHeaderCell>
-                                            <CTableHeaderCell scope="col">Class</CTableHeaderCell>
-                                            <CTableHeaderCell scope="col">Heading</CTableHeaderCell>
-                                            <CTableHeaderCell scope="col">Heading</CTableHeaderCell>
-                                        </CTableRow>
-                                    </CTableHead>
-                                    <CTableBody>
-                                        <CTableRow>
-                                            <CTableHeaderCell scope="row">1</CTableHeaderCell>
-                                            <CTableDataCell>Mark</CTableDataCell>
-                                            <CTableDataCell>Otto</CTableDataCell>
-                                            <CTableDataCell>@mdo</CTableDataCell>
-                                        </CTableRow>
-                                        <CTableRow>
-                                            <CTableHeaderCell scope="row">2</CTableHeaderCell>
-                                            <CTableDataCell>Jacob</CTableDataCell>
-                                            <CTableDataCell>Thornton</CTableDataCell>
-                                            <CTableDataCell>@fat</CTableDataCell>
-                                        </CTableRow>
-                                        <CTableRow>
-                                            <CTableHeaderCell scope="row">3</CTableHeaderCell>
-                                            <CTableDataCell colSpan={2}>Larry the Bird</CTableDataCell>
-                                            <CTableDataCell>@twitter</CTableDataCell>
+                                            <CTableHeaderCell scope="row">Gradient Boosting</CTableHeaderCell>
+                                            <CTableDataCell></CTableDataCell>
+                                            <CTableDataCell></CTableDataCell>
+                                            <CTableDataCell></CTableDataCell>
                                         </CTableRow>
                                     </CTableBody>
                                 </CTable>
