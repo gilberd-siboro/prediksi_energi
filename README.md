@@ -42,6 +42,11 @@ or
 $ yarn build
 ```
 
+### Installation BE
+
+``` bash
+$ pip install -r requirements.txt
+```
 
 ### Basic usage Python BackEnd
 
