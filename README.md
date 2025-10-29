@@ -1,4 +1,4 @@
-### Installation
+### Installation FE
 
 ``` bash
 $ npm install
@@ -40,4 +40,12 @@ or
 ```bash
 # build for production with minification
 $ yarn build
+```
+
+
+### Basic usage
+
+
+``` bash
+$ uvicorn app.main:app --reload
 ```
