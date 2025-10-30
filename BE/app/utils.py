@@ -5,7 +5,7 @@ from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_absolute_error, r2_score
 from pathlib import Path
-from typing import Optional  # Tambahkan ini
+from typing import Optional
 
 # Model prediksi
 models = {
